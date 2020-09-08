@@ -42,6 +42,7 @@ while True:
 while True:
     if not connected:
         print("connection closed.")
+        break
 
     try:
         print("recieving")
@@ -64,4 +65,4 @@ while True:
         if ret != 0:
             continue  # Couldn't execute cmd. Try again.
     else:
-        break # client disconnected.
+        connected = False # client disconnected.
