@@ -9,5 +9,6 @@ For example, if you're using VMware Workstation Player:
 * clone this repo onto your host machine
 * Use bridged networking
 * copy server.py onto guest VM
-    scp server.py <vmname>@<vm_ip>:~/
+    scp server.py 
+    <vm_name>@<vm_ip>:~/
 * run the server as python3 server.py
